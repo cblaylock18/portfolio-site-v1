@@ -1,13 +1,28 @@
-import { useState } from "react";
-import "./App.css";
+import { Link, Outlet } from "react-router-dom";
+import { Header } from "../Components/Header/Header";
+import { Nav } from "../Components/Nav/Nav";
+import { Footer } from "../Components/Footer/Footer";
+import "./App.module.css";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-        </button>
+        <div>
+            <Header></Header>
+            <Nav></Nav>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="projects">Projects</Link>
+                </li>
+                <li>
+                    <Link to="about">About</Link>
+                </li>
+            </ul>
+            <Outlet></Outlet>
+            <Footer></Footer>
+        </div>
     );
 }
 
