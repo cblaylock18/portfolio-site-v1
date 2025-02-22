@@ -1,29 +1,16 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Header } from "../Components/Header/Header";
-import { Nav } from "../Components/Nav/Nav";
 import { Footer } from "../Components/Footer/Footer";
-import "./App.module.css";
+import { ThemeProvider } from "../Context/ThemeProvider";
 
 function App() {
     return (
-        <div>
+        <ThemeProvider>
             <Header></Header>
-            <Nav></Nav>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="projects">Projects</Link>
-                </li>
-                <li>
-                    <Link to="about">About</Link>
-                </li>
-            </ul>
             <Outlet></Outlet>
             <Footer></Footer>
-        </div>
+        </ThemeProvider>
     );
 }
 
-export default App;
+export { App };

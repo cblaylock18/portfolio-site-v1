@@ -1,7 +1,18 @@
+import { useContext } from "react";
 import styles from "./Header.module.css";
+import { Nav } from "./Nav";
+import { ThemeContext } from "../../Context/ThemeProvider";
 
 function Header() {
-    return <div className={styles.div}>I&apos;m a header!</div>;
+    const { darkMode } = useContext(ThemeContext);
+
+    return (
+        <header className={`${styles.header} ${darkMode ? styles.dark : ""}`}>
+            <img src="favicon.png" alt="site logo, CB" />
+            <h1>Christopher Blaylock</h1>
+            <Nav></Nav>
+        </header>
+    );
 }
 
 export { Header };

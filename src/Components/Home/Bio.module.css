@@ -1,0 +1,61 @@
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalInfo > img {
+    object-fit: cover;
+    object-position: 25% 25%;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.personalInfo > p {
+    max-width: 400px;
+    text-align: center;
+}
+
+.personalInfo > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    height: 40px;
+    max-width: 400px;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+}
+
+.personalInfo > a > img {
+    height: 30px;
+}
+
+.personalInfo > a:hover {
+    border-bottom: 1px solid black;
+}
+
+.dark a:hover {
+    border-bottom: 1px solid white;
+}
+
+.personalInfo > a:active {
+    transition: transform 0.4s;
+    transform: scale(0.95);
+}
+
+.personalProjects {
+    margin-left: auto;
+}

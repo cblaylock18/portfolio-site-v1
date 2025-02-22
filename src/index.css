@@ -1,9 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+
+* {
+    font-family: inherit;
+    color: inherit;
+}
+
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
+    font-family: "Funnel Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+body {
+    margin: 0;
+}
 
+#root {
+    max-width: 1500px;
+    margin: 0 auto;
 }

@@ -1,0 +1,98 @@
+.nav {
+    margin-left: auto;
+    font-size: 1.6rem;
+}
+
+.nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color: purple;
+    border-bottom: 1px solid purple;
+}
+
+.toggle label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle label > p {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 75px;
+    transform: translate(-50%);
+    font-size: 0.8rem;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.toggle span:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.toggle input:checked + span {
+    background-color: white;
+}
+
+.toggle input:focus + span {
+    box-shadow: 0 0 1px white;
+}
+
+.toggle input:checked + span:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark a:hover {
+    cursor: pointer;
+    color: rgb(255, 205, 255);
+    border-bottom: 1px solid rgb(255, 205, 255);
+}
