@@ -10,7 +10,7 @@ const userModePreference =
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-function ThemeProvider({ children }) {
+function ThemeProvider({ children = <div>An error occurred.</div> }) {
     const [darkMode, setDarkMode] = useState(userModePreference);
     const toggleDarkMode = () => {
         setDarkMode((prev) => !prev);

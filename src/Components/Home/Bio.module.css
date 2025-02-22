@@ -1,5 +1,6 @@
 .bio {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -39,8 +40,9 @@
     border-bottom: 1px solid transparent;
 }
 
-.personalInfo > a > img {
+.personalInfo > a > svg {
     height: 30px;
+    width: 30px;
 }
 
 .personalInfo > a:hover {
@@ -58,4 +60,12 @@
 
 .personalProjects {
     margin-left: auto;
+}
+
+.projectCard {
+    display: flex;
+}
+
+.projectCard > img {
+    height: 75px;
 }
