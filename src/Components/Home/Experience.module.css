@@ -1,3 +1,22 @@
+.experience {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.experience::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 95%;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 0%;
+}
+
+.experience.dark::after {
+    background-color: white;
+}
 .experience > h2 {
     font-size: 1.5rem;
     text-align: center;
