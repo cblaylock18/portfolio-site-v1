@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
     align-items: center;
     padding: 1rem;
 }
@@ -39,9 +40,10 @@
 }
 
 .personalInfo > p {
-    max-width: 400px;
+    max-width: 350px;
     text-align: center;
     margin: 0;
+    font-size: 1rem;
 }
 
 .personalInfo > a {
@@ -78,7 +80,6 @@
 }
 
 .personalProjects {
-    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -88,7 +89,7 @@
 .projectCard {
     display: grid;
     grid-template-columns: 185px 1fr;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 1.6rem 50px;
     place-items: center;
     text-align: center;
     border: 1px solid black;
@@ -106,6 +107,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 
 .projectCard > a:nth-child(3),

@@ -21,6 +21,7 @@
 
 .toolbox > h2 {
     margin: 1rem 0;
+    font-size: 1.5rem;
 }
 
 .tech {
@@ -45,6 +46,9 @@
 .tool:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text x='0' y='24' font-size='24'>🔧</text></svg>")
+            16 16,
+        auto; */
 }
 
 .toolbox.dark .tool {
