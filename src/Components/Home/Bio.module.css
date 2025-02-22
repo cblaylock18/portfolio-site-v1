@@ -1,4 +1,5 @@
 .bio {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,11 +7,27 @@
     padding: 1rem;
 }
 
+.bio::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 95%;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 0%;
+}
+
+.bio.dark::after {
+    background-color: white;
+}
+
 .personalInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .personalInfo > img {
@@ -24,6 +41,7 @@
 .personalInfo > p {
     max-width: 400px;
     text-align: center;
+    margin: 0;
 }
 
 .personalInfo > a {
@@ -34,7 +52,7 @@
     gap: 0.3rem;
     cursor: pointer;
     font-size: 1.4rem;
-    height: 40px;
+    height: 30px;
     max-width: 400px;
     font-weight: bold;
     border-bottom: 1px solid transparent;
@@ -45,7 +63,8 @@
     width: 30px;
 }
 
-.personalInfo > a:hover {
+.personalInfo a:hover,
+.personalProjects a:hover {
     border-bottom: 1px solid black;
 }
 
@@ -60,12 +79,53 @@
 
 .personalProjects {
     margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 .projectCard {
-    display: flex;
+    display: grid;
+    grid-template-columns: 185px 1fr;
+    grid-template-rows: 50px 50px;
+    place-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 0.2rem;
 }
 
-.projectCard > img {
-    height: 75px;
+.projectCard.dark {
+    border: 1px solid white;
+}
+
+.projectCard > a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectCard > a:nth-child(3),
+.projectCard > a:nth-child(4) {
+    justify-self: end;
+}
+
+.projectCard > a > svg {
+    height: 25px;
+    width: 25px;
+}
+
+.projectCard > p {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 0.8rem;
+    margin: 0;
+    max-width: 175px;
+}
+
+.projectCard h2 {
+    margin: 0;
+    font-size: 1.3rem;
 }

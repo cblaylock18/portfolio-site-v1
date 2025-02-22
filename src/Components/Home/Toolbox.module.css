@@ -1,0 +1,52 @@
+.toolbox {
+    position: relative;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.toolbox::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 95%;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 0%;
+}
+
+.toolbox.dark::after {
+    background-color: white;
+}
+
+.toolbox > h2 {
+    margin: 1rem 0;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.tool {
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.toolbox.dark .tool {
+    border: 1px solid white;
+}
