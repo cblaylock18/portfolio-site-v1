@@ -17,15 +17,14 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Visit My Github <GithubSVG darkMode={darkMode}></GithubSVG>
+                    Github <GithubSVG darkMode={darkMode}></GithubSVG>
                 </a>
                 <a
                     href="https://www.linkedin.com/in/christopher-w-blaylock/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Visit My LinkedIn{" "}
-                    <LinkedInSVG darkMode={darkMode}></LinkedInSVG>
+                    LinkedIn <LinkedInSVG darkMode={darkMode}></LinkedInSVG>
                 </a>
                 <a href={resume} download>
                     Download Resume (PDF 200kb)

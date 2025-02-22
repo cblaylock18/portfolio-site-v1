@@ -3,17 +3,12 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import { Home } from "./Components/Home/Home";
 import { Projects } from "./Components/Projects/Projects";
 import { About } from "./Components/About/About";
-import { ThemeProvider } from "./Context/ThemeProvider";
 
 const routes = [
     {
         path: "/",
         element: <App />,
-        errorElement: (
-            <ThemeProvider>
-                <ErrorPage />
-            </ThemeProvider>
-        ),
+        errorElement: <ErrorPage />,
         children: [
             { index: true, element: <Home /> },
             {

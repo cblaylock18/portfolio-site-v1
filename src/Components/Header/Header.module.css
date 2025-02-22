@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 2rem 0;
     background-color: white;
 }
 
@@ -16,7 +16,7 @@
     position: absolute;
     height: 1px;
     background-color: black;
-    width: 95%;
+    width: 100%;
     right: 50%;
     transform: translate(50%);
     bottom: 0%;

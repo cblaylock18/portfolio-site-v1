@@ -1,11 +1,27 @@
 .home {
     background-color: white;
     color: black;
-    padding: 1rem;
+    position: relative;
     flex: 1;
+    padding: 4rem 0 0 0;
 }
 
 .dark {
     background-color: black;
     color: white;
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 0%;
+}
+
+.home.dark::after {
+    background-color: white;
 }

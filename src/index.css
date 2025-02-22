@@ -14,13 +14,15 @@
 
 body {
     margin: 0;
+    background-color: white;
+}
+
+body.dark {
     background-color: black;
 }
 
 #root {
     max-width: 1500px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }

@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const ThemeContext = createContext({
@@ -15,6 +15,14 @@ function ThemeProvider({ children = <div>An error occurred.</div> }) {
     const toggleDarkMode = () => {
         setDarkMode((prev) => !prev);
     };
+
+    useEffect(() => {
+        if (darkMode) {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    }, [darkMode]);
 
     return (
         <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>

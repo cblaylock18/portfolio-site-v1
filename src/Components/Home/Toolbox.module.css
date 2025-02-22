@@ -1,7 +1,7 @@
 .toolbox {
     position: relative;
     text-align: center;
-    padding-bottom: 1rem;
+    padding: 4rem 0rem;
 }
 
 .toolbox::after {
@@ -9,7 +9,7 @@
     position: absolute;
     height: 1px;
     background-color: black;
-    width: 95%;
+    width: 100%;
     right: 50%;
     transform: translate(50%);
     bottom: 0%;
@@ -20,7 +20,8 @@
 }
 
 .toolbox > h2 {
-    margin: 1rem 0;
+    padding: 0 0 4rem 0;
+    margin: 0;
     font-size: 1.5rem;
 }
 
