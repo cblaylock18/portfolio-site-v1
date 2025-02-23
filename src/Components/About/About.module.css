@@ -1,3 +1,45 @@
-.div {
-    color: red;
+.about {
+    position: relative;
+    color: black;
+    background-color: white;
+}
+
+.about.dark {
+    color: white;
+    background-color: black;
+}
+
+.about::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 0%;
+}
+
+.about.dark::after {
+    background-color: white;
+}
+
+.about h2,
+.about h3 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 4rem 0;
+    font-weight: bold;
+}
+
+.about > p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.categoryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    gap: 4rem;
 }
