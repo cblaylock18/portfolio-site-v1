@@ -1,3 +1,92 @@
-.div {
-    color: brown;
+.projectCard {
+    width: 100%;
+    min-width: 325px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 16px;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.projectCard.dark {
+    border: 1px solid white;
+}
+
+.imageContainer {
+    border-radius: 16px;
+    height: 400px;
+    width: 100%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.infoContainer {
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard h3 {
+    margin: 0;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+.projectCard p {
+    margin: 0;
+}
+
+.shortDesc {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.longDesc {
+    font-size: 1.4rem;
+}
+
+.links {
+    display: inline-flex;
+    gap: 3rem;
+    margin-top: auto;
+    padding-bottom: 2rem;
+}
+
+.projectCard a {
+    text-decoration: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectCard a:hover {
+    border-bottom: 1px solid black;
+}
+
+.projectCard.dark a:hover {
+    border-bottom: 1px solid white;
+}
+
+.projectCard a:active {
+    transition: transform 0.4s;
+    transform: scale(0.95);
+}
+
+.projectCard > a > svg {
+    height: 25px;
+    width: 25px;
 }

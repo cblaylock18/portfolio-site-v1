@@ -6,6 +6,7 @@ import routes from "./routes";
 import { ThemeProvider } from "./Context/ThemeProvider";
 
 const router = createBrowserRouter(routes);
+window.history.scrollRestoration = "manual";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>

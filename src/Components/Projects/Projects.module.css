@@ -1,4 +1,74 @@
-.div {
+.projectPage {
+    position: relative;
+    background-color: white;
+    color: black;
+    flex: 1;
+}
+
+.projectPage.dark {
+    background-color: black;
+    color: white;
+}
+
+.projectPage::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 0%;
+}
+
+.projectPage.dark::after {
+    background-color: white;
+}
+
+.projectPage > h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 4rem 0;
+}
+
+.projectPage > p {
+    font-size: 2rem;
+    line-height: 1.7rem;
+    margin: 0;
+    padding-bottom: 4rem;
+}
+
+.projectPage a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.2rem;
+}
+
+.projectPage a:hover {
+    border-bottom: 1px solid black;
+}
+
+.projectPage.dark a:hover {
+    border-bottom: 1px solid white;
+}
+
+.projectPage a:active {
+    transition: transform 0.4s;
+    transform: scale(0.95);
+}
+
+.projectPage svg {
+    height: 25px;
+    width: 25px;
+}
+
+.projects {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 4rem;
 }

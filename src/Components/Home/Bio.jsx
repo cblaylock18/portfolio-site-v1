@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { ThemeContext } from "../../Context/ThemeProvider";
 import headshot from "../../assets/PersonalImages/headshot.jpg";
 import styles from "./Bio.module.css";
-import { projects } from "./projects";
+import { projects } from "../Projects/projects.js";
 import { ExternalLinkSVG } from "../../assets/SVGs/ExternalLinkSVG.jsx";
 
 function PersonalInfo() {
@@ -49,7 +49,7 @@ function ProjectCard({
         <div
             className={`${styles.projectCard} ${darkMode ? styles.dark : null}`}
         >
-            <Link to="/projects#project-id">
+            <Link to={`/projects#${project.id}`}>
                 <h2>{project.title}</h2>
             </Link>
             <p>{project.shortDesc}</p>
