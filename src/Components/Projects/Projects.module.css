@@ -26,15 +26,14 @@
 }
 
 .projectPage > h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
-    padding: 4rem 0;
+    padding: 4rem 0 2rem 0;
     font-weight: bold;
 }
 
 .projectPage > p {
     font-size: 2rem;
-    line-height: 1.7rem;
     margin: 0;
     padding-bottom: 4rem;
 }

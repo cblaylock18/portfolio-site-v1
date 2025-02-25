@@ -9,7 +9,7 @@ function Home() {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <main className={`${styles.home} ${darkMode ? styles.dark : null}`}>
+        <main className={`${styles.home} ${darkMode ? styles.dark : ""}`}>
             <Bio></Bio>
             <Toolbox></Toolbox>
             <Experience></Experience>

@@ -16,7 +16,7 @@ function About() {
     });
 
     return (
-        <main className={`${styles.about} ${darkMode ? styles.dark : null}`}>
+        <main className={`${styles.about} ${darkMode ? styles.dark : ""}`}>
             <h2>About</h2>
             <p>A little bit more about me!</p>
             {categories.map((category) => {
@@ -24,9 +24,13 @@ function About() {
                     <div key={category}>
                         <h3>{category}</h3>
                         <div className={styles.categoryContainer}>
-                            {about.map((item) => {
+                            {about.map((item, index) => {
                                 return item.category === category ? (
-                                    <AboutCard key={item.id} about={item} />
+                                    <AboutCard
+                                        key={item.id}
+                                        about={item}
+                                        imgLeft={index % 2 === 0}
+                                    />
                                 ) : null;
                             })}
                         </div>

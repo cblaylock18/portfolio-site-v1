@@ -39,11 +39,19 @@
     border-radius: 50%;
 }
 
+.personalInfo > p > span {
+    font-size: 4rem;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 .personalInfo > p {
     max-width: 350px;
     text-align: center;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .personalInfo > a {
@@ -53,7 +61,7 @@
     align-items: center;
     gap: 0.3rem;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     height: 30px;
     max-width: 400px;
     font-weight: bold;

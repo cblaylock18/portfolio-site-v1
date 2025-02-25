@@ -32,7 +32,7 @@ function ExperienceBlock({
     return (
         <div
             className={`${styles.experienceBlock} ${
-                darkMode ? styles.dark : null
+                darkMode ? styles.dark : ""
             }`}
         >
             <h3 className={styles.title}>{experience.title}</h3>
@@ -51,7 +51,7 @@ function Experience() {
 
     return (
         <div
-            className={`${styles.experience} ${darkMode ? styles.dark : null}`}
+            className={`${styles.experience} ${darkMode ? styles.dark : ""}`}
         >
             <h2>Experience</h2>
             <div className={styles.work}>

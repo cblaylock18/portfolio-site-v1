@@ -3,7 +3,6 @@
     min-width: 325px;
     height: 600px;
     display: grid;
-    grid-template-columns: 3fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     place-items: center;
     border: 1px solid black;
@@ -12,6 +11,15 @@
     overflow: hidden;
     color: black;
     background-color: white;
+    box-sizing: border-box;
+}
+
+.aboutCard.left {
+    grid-template-columns: 3fr 2fr;
+}
+
+.aboutCard.right {
+    grid-template-columns: 2fr 3fr;
 }
 
 .aboutCard.dark {
@@ -39,8 +47,9 @@
 }
 
 .slider button svg {
-    height: 150px;
+    max-height: 150px;
     width: 150px;
+    max-width: 100%;
     opacity: 50%;
 }
 
@@ -64,9 +73,10 @@
 }
 
 .imageContainer > img {
+    flex: 0 0 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: center;
 }
 
 .infoContainer {

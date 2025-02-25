@@ -7,7 +7,7 @@ const ErrorPage = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div className={`${styles.error} ${darkMode ? styles.dark : null}`}>
+        <div className={`${styles.error} ${darkMode ? styles.dark : ""}`}>
             <h1>Oh no, this route doesn&apos;t exist!</h1>
             <Link to="/">
                 You can go back to the home page by clicking here, though!

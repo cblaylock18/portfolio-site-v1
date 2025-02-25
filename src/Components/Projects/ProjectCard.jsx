@@ -19,7 +19,7 @@ function ProjectCard({
 
     return (
         <div
-            className={`${styles.projectCard} ${darkMode ? styles.dark : null}`}
+            className={`${styles.projectCard} ${darkMode ? styles.dark : ""}`}
             id={`${project.id}`}
         >
             <div className={styles.imageContainer}>

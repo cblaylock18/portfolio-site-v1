@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import styles from "./Nav.module.css";
 import { ThemeContext } from "../../Context/ThemeProvider";
@@ -7,16 +7,37 @@ function Nav() {
     const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
     return (
-        <nav className={`${styles.nav} ${darkMode ? styles.dark : null}`}>
+        <nav className={`${styles.nav} ${darkMode ? styles.dark : ""}`}>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            `${isActive ? styles.active : ""}`
+                        }
+                    >
+                        Home
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="projects">Projects</Link>
+                    <NavLink
+                        to="projects"
+                        className={({ isActive }) =>
+                            `${isActive ? styles.active : ""}`
+                        }
+                    >
+                        Projects
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="about">About</Link>
+                    <NavLink
+                        to="about"
+                        className={({ isActive }) =>
+                            `${isActive ? styles.active : ""}`
+                        }
+                    >
+                        About
+                    </NavLink>
                 </li>
                 <li className={styles.toggle}>
                     <label htmlFor="light-dark-toggle">

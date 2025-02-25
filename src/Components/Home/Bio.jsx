@@ -14,11 +14,10 @@ function PersonalInfo() {
         <div className={styles.personalInfo}>
             <img src={headshot} alt="Christopher Blaylock" />
             <p>
-                I&apos;m a web developer building responsive, user-focused apps
-                with HTML, CSS, JavaScript, and React. Previously a U.S. Navy
-                Nuclear Engineer and Boeing Quality Engineer, I now love
-                creating smooth digital experiences and embracing new
-                challenges.
+                <span>Hi! </span>I&apos;m a web developer building responsive,
+                user-focused apps, usually with React. Previously a Navy Nuclear
+                Engineer and Boeing Quality Engineer, I now enjoy learning all I
+                can about development!
             </p>
             <a
                 href="https://www.linkedin.com/in/christopher-w-blaylock/"
@@ -47,7 +46,7 @@ function ProjectCard({
 
     return (
         <div
-            className={`${styles.projectCard} ${darkMode ? styles.dark : null}`}
+            className={`${styles.projectCard} ${darkMode ? styles.dark : ""}`}
         >
             <Link to={`/projects#${project.id}`}>
                 <h2>{project.title}</h2>
@@ -78,7 +77,7 @@ function Bio() {
 
     return (
         <>
-            <div className={`${styles.bio} ${darkMode ? styles.dark : null}`}>
+            <div className={`${styles.bio} ${darkMode ? styles.dark : ""}`}>
                 <PersonalInfo />
                 <div className={styles.personalProjects}>
                     {projects.map((project) => (

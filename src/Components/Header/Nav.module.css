@@ -23,6 +23,16 @@
     border-bottom: 1px solid purple;
 }
 
+.active {
+    color: purple;
+    border-bottom: 1px solid purple;
+}
+
+.dark .active {
+    color: rgb(255, 205, 255);
+    border-bottom: 1px solid rgb(255, 205, 255);
+}
+
 .toggle label {
     position: relative;
     display: inline-block;

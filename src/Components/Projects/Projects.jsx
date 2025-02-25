@@ -10,7 +10,7 @@ function Projects() {
 
     return (
         <main
-            className={`${styles.projectPage} ${darkMode ? styles.dark : null}`}
+            className={`${styles.projectPage} ${darkMode ? styles.dark : ""}`}
         >
             <h2>My Project Page</h2>
             <p>

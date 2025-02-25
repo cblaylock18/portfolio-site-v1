@@ -13,10 +13,10 @@
 
 .footer > img {
     position: absolute;
-    top: -1rem;
+    top: -2rem;
     right: 50%;
     transform: translate(50%);
-    height: 2rem;
+    height: 4rem;
     border: 1px solid white;
 }
 
