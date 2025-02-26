@@ -18,8 +18,8 @@ function PersonalInfo() {
             <img src={headshot} alt="Christopher Blaylock" />
             <p>
                 <span>Hi! </span>I&apos;m a React developer that builds
-                responsive, user-focused apps. I enjoy learning all I can about
-                software development!
+                responsive, user-focused apps. I always enjoy learning and am
+                currently focused on Node/Express.
             </p>
             <a
                 href="https://www.linkedin.com/in/christopher-w-blaylock/"
