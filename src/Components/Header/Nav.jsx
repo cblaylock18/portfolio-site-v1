@@ -16,7 +16,7 @@ function Nav() {
                             `${isActive ? styles.active : ""}`
                         }
                     >
-                        Home
+                        HOME
                     </NavLink>
                 </li>
                 <li>
@@ -26,7 +26,7 @@ function Nav() {
                             `${isActive ? styles.active : ""}`
                         }
                     >
-                        Projects
+                        PROJECTS
                     </NavLink>
                 </li>
                 <li>
@@ -36,7 +36,7 @@ function Nav() {
                             `${isActive ? styles.active : ""}`
                         }
                     >
-                        About
+                        ABOUT
                     </NavLink>
                 </li>
                 <li className={styles.toggle}>
@@ -48,6 +48,7 @@ function Nav() {
                             type="checkbox"
                             onChange={toggleDarkMode}
                             checked={darkMode}
+                            aria-checked={darkMode}
                         />
                         <span></span>
                     </label>

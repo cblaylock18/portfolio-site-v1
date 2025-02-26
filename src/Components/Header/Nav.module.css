@@ -13,24 +13,31 @@
     gap: 2rem;
 }
 
+.nav li {
+    min-width: 9rem;
+    text-align: center;
+}
+
 .nav a {
     text-decoration: none;
 }
 
 .nav a:hover {
     cursor: pointer;
-    color: purple;
-    border-bottom: 1px solid purple;
+    border-bottom: 1px solid black;
+}
+
+.dark a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
 }
 
 .active {
-    color: purple;
-    border-bottom: 1px solid purple;
+    font-weight: bold;
 }
 
 .dark .active {
-    color: rgb(255, 205, 255);
-    border-bottom: 1px solid rgb(255, 205, 255);
+    font-weight: bold;
 }
 
 .toggle label {
@@ -42,11 +49,13 @@
 
 .toggle label > p {
     position: absolute;
-    top: 25px;
+    bottom: -1.5rem;
     left: 50%;
     width: 75px;
     transform: translate(-50%);
     font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
 }
 
 .toggle input {
@@ -87,6 +96,9 @@
 
 .toggle input:focus + span {
     box-shadow: 0 0 1px white;
+    outline: 1px solid;
+    outline-offset: 4px;
+    transition: none;
 }
 
 .toggle input:checked + span:before {
@@ -99,10 +111,4 @@
 .dark {
     background-color: black;
     color: white;
-}
-
-.dark a:hover {
-    cursor: pointer;
-    color: rgb(255, 205, 255);
-    border-bottom: 1px solid rgb(255, 205, 255);
 }

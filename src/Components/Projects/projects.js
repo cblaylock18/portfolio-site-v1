@@ -13,13 +13,13 @@ const projects = [
             "https://mock-shopping-cart-i8aglckgf-cblaylock18s-projects.vercel.app/",
         githubRepo: "https://github.com/cblaylock18/mock-shopping-cart",
         imageSrc: shoppingCart,
-        shortDesc: "React, React Router, CSS Modules, Vitest",
+        shortDesc: "React, React Router, CSS Modules, Vitest, CRUD",
         description:
             "A React-based shopping cart application that allows users to browse items, add them to their cart, adjust quantities, and view their total. This project was built to practice React fundamentals, state management, and routing.",
     },
     {
         id: 2,
-        title: "Memory Card",
+        title: "Pokémon Memory Card",
         liveDemo:
             "https://memory-card-6ppp23py9-cblaylock18s-projects.vercel.app/",
         githubRepo: "https://github.com/cblaylock18/memory-card",
@@ -44,7 +44,7 @@ const projects = [
         liveDemo: "https://cblaylock18.github.io/homepage-practice/",
         githubRepo: "https://github.com/cblaylock18/homepage-practice",
         imageSrc: landingPage,
-        shortDesc: "a11y, Grid, Flexbox, @query, @font-face, Clip-path",
+        shortDesc: "a11y, Grid, Flexbox, media-query, font-face, clip-path",
         description:
             "A responsive homepage built using Advanced HTML/CSS techniques. This project showcases modern HTML5 and CSS3 techniques—including custom fonts with @font-face, diagonal backgrounds via clip-path, CSS Grid, Flexbox, and media queries—to create an engaging, adaptive layout for mobile, tablet, and desktop screens.",
     },
@@ -54,7 +54,7 @@ const projects = [
         liveDemo: "https://cblaylock18.github.io/to-do-list/",
         githubRepo: "https://github.com/cblaylock18/to-do-list",
         imageSrc: toDoTracker,
-        shortDesc: "HTML, CSS, JavaScript, LocalStorage",
+        shortDesc: "CRUD, HTML, CSS, JavaScript, LocalStorage",
         description:
             "A responsive To-Do List App built with HTML, CSS, and JavaScript. It leverages DOM manipulation and localStorage to manage projects and tasks with live updates and priority sorting.",
     },
@@ -66,7 +66,7 @@ const projects = [
         imageSrc: ticTacToe,
         shortDesc: "HTML, CSS, JavaScript",
         description:
-            "A classic Tic-Tac-Toe game built as part of The Odin Project curriculum to practice modular JavaScript, DOM manipulation, and game logic. Players take turns marking a 3x3 grid, with the game dynamically detecting wins and ties.",
+            "A classic Tic-Tac-Toe game built as part of The Odin Project curriculum to practice modular JavaScript, DOM manipulation, and game logic. Players take turns marking a 3x3 grid, with the game dynamically detecting wins and ties. This was one of my first JS heavy apps, and I'm still very proud of it.",
     },
 ];
 

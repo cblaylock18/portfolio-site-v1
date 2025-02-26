@@ -18,10 +18,13 @@ function About() {
     return (
         <main className={`${styles.about} ${darkMode ? styles.dark : ""}`}>
             <h2>About</h2>
-            <p>A little bit more about me!</p>
+            <p>
+                This is the place to be if you want to get to know me a little
+                better. ☺
+            </p>
             {categories.map((category) => {
                 return (
-                    <div key={category}>
+                    <section key={category} aria-label={category}>
                         <h3>{category}</h3>
                         <div className={styles.categoryContainer}>
                             {about.map((item, index) => {
@@ -34,7 +37,7 @@ function About() {
                                 ) : null;
                             })}
                         </div>
-                    </div>
+                    </section>
                 );
             })}
         </main>

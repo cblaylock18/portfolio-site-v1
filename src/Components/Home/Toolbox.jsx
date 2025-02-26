@@ -7,8 +7,11 @@ function Toolbox() {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div className={`${styles.toolbox} ${darkMode ? styles.dark : ""}`}>
-            <h2>Tech Toolbox</h2>
+        <section
+            aria-labelledby="tech-toolbox-section-header"
+            className={`${styles.toolbox} ${darkMode ? styles.dark : ""}`}
+        >
+            <h2 id="tech-toolbox-section-header">Tech Toolbox</h2>
             <div className={styles.tech}>
                 {toolbox.map((tool) => {
                     return (
@@ -18,7 +21,7 @@ function Toolbox() {
                     );
                 })}
             </div>
-        </div>
+        </section>
     );
 }
 

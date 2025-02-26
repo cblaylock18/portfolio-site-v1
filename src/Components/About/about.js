@@ -18,7 +18,8 @@ import balatro from "../../assets/PersonalImages/Gaming/balatro.jpg";
 import godOfWar from "../../assets/PersonalImages/Gaming/godofwar.jpg";
 import hades from "../../assets/PersonalImages/Gaming/hades.avif";
 import garden from "../../assets/PersonalImages/Gardening&Fishtank/garden.jpg";
-import fish from "../../assets/PersonalImages/Gardening&Fishtank/fish.jpg";
+import fish1 from "../../assets/PersonalImages/Gardening&Fishtank/fish1.png";
+import fish2 from "../../assets/PersonalImages/Gardening&Fishtank/fish2.png";
 
 const about = [
     {
@@ -26,14 +27,14 @@ const about = [
         category: "Travel",
         title: "Patagonia",
         details:
-            "In January 2024, I journeyed to Patagonia in Chile and Argentina. I visited Torres del Paine National Park, El Perito Moreno Glacier, and El Chaltén, marveled at Andean condors and guanacos, and savored wild calafate berries along with some unforgettable cuisine. It was truly an adventure to remember.",
+            "In January 2024, I flew to Patagonia in Chile and Argentina. I visited Torres del Paine National Park, El Perito Moreno Glacier, and El Chaltén, where my S.O. and I got to see Andean condors and guanacos. We enjoyed eating wild calafate berries along with some incredible (and surprisingly affordable) food. It was the trip of a lifetime.",
         imgs: [
-            { src: elPeritoMoreno, id: 1, alt: "El Perito Moreno Glacier" },
             {
                 src: torresDelPaine,
-                id: 2,
+                id: 1,
                 alt: "Torres del Paine National Park",
             },
+            { src: elPeritoMoreno, id: 2, alt: "El Perito Moreno Glacier" },
             { src: guanacos, id: 3, alt: "Guanacos in their natural habitat" },
             { src: patagoniaLogo, id: 4, alt: "Patagonia logo" },
         ],
@@ -43,7 +44,7 @@ const about = [
         category: "Travel",
         title: "Southwest Adventure",
         details:
-            "In April 2024, I spent an exhilarating week in Utah and Arizona with a group of friends. We explored Arches, Zion, Canyonlands, Bryce Canyon, Capitol Reef, the Grand Canyon, and even a cactus garden in Sagaro. It was an adventure-packed trip with plenty of moving parts, but an absolute blast.",
+            "In April 2024, I spent a fun-packed week in Utah and Arizona with a group of friends. We explored Arches, Zion, Canyonlands (our favorite!), Bryce Canyon, Capitol Reef, and the Grand Canyon. It was a busy trip with plenty of moving parts, but an absolute blast.",
         imgs: [
             { src: sw1, id: 1, alt: "Chris and S.O. at Arches" },
             { src: sw2, id: 2, alt: "Bryce Canyon" },
@@ -57,7 +58,7 @@ const about = [
         category: "Travel",
         title: "Autumn in Lincoln, NH",
         details:
-            "In November 2024, I took a trip to Lincoln, New Hampshire to experience the vibrant fall colors before the leaves fell. It was an awesome, brisk adventure filled with hiking and the serene beauty of autumn.",
+            "In November 2024, I took a trip to Lincoln, New Hampshire to see the vibrant fall colors before the leaves fell. It was an awesome weekend adventure filled with hiking and the serene feel of autumn.",
         imgs: [
             { src: babblingBrook, id: 1, alt: "Babbling brook" },
             { src: autumnLeaves, id: 2, alt: "Autumn leaves" },
@@ -70,7 +71,7 @@ const about = [
         category: "Hobbies",
         title: "Dungeons & Dragons Campaign",
         details:
-            "I've been the Dungeon Master for my D&D group for nearly a year and a half. With only a few sessions left in our current campaign, it's been a rewarding creative outlet that challenges my storytelling and leadership skills.",
+            "I've been the Dungeon Master for my D&D group for nearly a year and a half. With only a few sessions left in our current campaign, it's been a rewarding creative outlet that challenges my storytelling and imagination.",
         imgs: [
             { src: dice, id: 1, alt: "D&D dice" },
             { src: campaignCity, id: 2, alt: "D&D campaign image" },
@@ -81,7 +82,7 @@ const about = [
         category: "Hobbies",
         title: "Pickleball",
         details:
-            "My significant other and I love playing pickleball with friends. It's a fun, energetic game that keeps us active and brings people together.",
+            "My S.O. and I love playing pickleball together and with friends. We used to play tennis, but the courts nearby were converted to pickleball courts so we hopped on the bandwagon.",
         imgs: [{ src: pickleball, id: 1, alt: "Pickleball courts" }],
     },
     {
@@ -89,7 +90,7 @@ const about = [
         category: "Hobbies",
         title: "Gaming",
         details:
-            "I enjoy a wide range of games—from immersive video games like Elden Ring to classic board and card games. Gaming is a great way to relax and connect with friends.",
+            "I enjoy all types of games—here's a not-so-short list of some of our favorites: Hades, God of War, One Night Ultimate Werewolf, Elden Ring, Wolf Among Us, Just One, Horizon, Ghost of Tsushima, Astrobot, Baldur's Gate 3, Undertale, and Control.",
         imgs: [
             { src: balatro, id: 1, alt: "Balatro" },
             { src: godOfWar, id: 2, alt: "God of War: Ragnarok" },
@@ -99,12 +100,13 @@ const about = [
     {
         id: 7,
         category: "Hobbies",
-        title: "Gardening & Fishkeeping",
+        title: "Gardening & Aquarium",
         details:
-            "I have a passion for gardening and nurturing potted plants, and I also care for a fish tank filled with shrimp, snails, and chili rasboras. This hobby connects me with nature and brings a calming balance to my daily life.",
+            "We love planting our annual garden and taking care of house plants. We also care for a fish tank filled with shrimp, snails, and chili rasboras. The little pieces of nature in the house help us stay present.",
         imgs: [
             { src: garden, id: 1, alt: "Garden bed" },
-            { src: fish, id: 2, alt: "Fishtank" },
+            { src: fish1, id: 2, alt: "Fishtank with chili rasboras" },
+            { src: fish2, id: 3, alt: "Fishtank with chili more rasboras" },
         ],
     },
 ];

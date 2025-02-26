@@ -45,6 +45,7 @@
     white-space: nowrap;
     display: inline-block;
     vertical-align: bottom;
+    line-height: 3.5rem;
 }
 
 .personalInfo > p {
@@ -127,6 +128,11 @@
     justify-self: start;
 }
 
+.projectCard > a:nth-child(1) {
+    align-self: flex-end;
+    padding-bottom: 0.25rem;
+}
+
 .projectCard > a:nth-child(3),
 .projectCard > a:nth-child(4) {
     justify-self: end;
@@ -147,12 +153,13 @@
 
 .projectCard > p {
     grid-area: 2 / 1 / 3 / 2;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
-    max-width: 200px;
+    max-width: 250px;
+    align-self: flex-start;
 }
 
 .projectCard h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }

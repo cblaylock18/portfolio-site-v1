@@ -12,15 +12,26 @@ function Projects() {
         <main
             className={`${styles.projectPage} ${darkMode ? styles.dark : ""}`}
         >
-            <h2>My Project Page</h2>
+            <h2>My Project Portfolio</h2>
             <p>
-                Here I show off some of the cool sites and apps that I&apos;ve
-                built. Feel free to click around and play with the live demos.
-                If you have any questions, reach out to me via{" "}
+                Here are some of the cool apps I&apos;ve built. Feel free to
+                click around and play with the live demos.{" "}
+            </p>
+            <section aria-label="Projects" className={styles.projects}>
+                {projects.map((project) => (
+                    <ProjectCard
+                        key={project.id}
+                        project={project}
+                    ></ProjectCard>
+                ))}
+            </section>
+            <p className={styles.callToAction}>
+                Any questions about my projects? Reach out via{" "}
                 <a
                     href="https://www.linkedin.com/in/christopher-w-blaylock/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Christopher Blaylock LinkedIn Profile"
                 >
                     LinkedIn{" "}
                     <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
@@ -30,20 +41,13 @@ function Projects() {
                     href="https://github.com/cblaylock18"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Christopher Blaylock Github Profile"
                 >
                     Github{" "}
                     <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
                 </a>
                 !
             </p>
-            <div className={styles.projects}>
-                {projects.map((project) => (
-                    <ProjectCard
-                        key={project.id}
-                        project={project}
-                    ></ProjectCard>
-                ))}
-            </div>
         </main>
     );
 }

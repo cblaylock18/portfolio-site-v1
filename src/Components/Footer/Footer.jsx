@@ -10,28 +10,34 @@ function Footer() {
 
     return (
         <footer className={`${styles.footer} ${darkMode ? styles.dark : ""}`}>
-            <img src="favicon.png" alt="site logo, CB" />
+            <img src="favicon.png" alt="Christopher Blaylock logo" />
             <div className={styles.links}>
                 <a
                     href="https://github.com/cblaylock18"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Christopher Blaylock GitHub Profile"
                 >
-                    Github <GithubSVG darkMode={darkMode}></GithubSVG>
+                    Github <GithubSVG darkMode={darkMode} />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/christopher-w-blaylock/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Christopher Blaylock LinkedIn Profile"
                 >
-                    LinkedIn <LinkedInSVG darkMode={darkMode}></LinkedInSVG>
+                    LinkedIn <LinkedInSVG darkMode={darkMode} />
                 </a>
-                <a href={resume} download>
+                <a
+                    href={resume}
+                    download
+                    aria-label="Download Christopher Blaylock's Resume (PDF, 200kb)"
+                >
                     Download Resume (PDF 200kb)
                 </a>
             </div>
             <p className={styles.copyright}>
-                Copyright © 2025 Christopher Blaylock. All rights reserved.
+                © 2025 Christopher Blaylock. All rights reserved.
             </p>
         </footer>
     );

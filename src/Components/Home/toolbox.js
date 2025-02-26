@@ -8,7 +8,12 @@ const toolbox = [
     { id: 7, tool: "Accessibility (a11y)", proficiency: "Intermediate" },
     {
         id: 8,
-        tool: "Asynchronous JS (Promises, async/await, Fetch API)",
+        tool: "Asynchronous JS (Promises, async/await)",
+        proficiency: "Intermediate",
+    },
+    {
+        id: 18,
+        tool: "Fetch API",
         proficiency: "Intermediate",
     },
     {

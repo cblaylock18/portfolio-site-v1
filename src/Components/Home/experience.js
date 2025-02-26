@@ -17,7 +17,7 @@ const experience = [
         location: "Charleston, SC",
         date: "Jun 2017 - Jun 2022",
         description:
-            "I served as a nuclear engineer in the Navy, training over 1,000 future submarine operators and leading teams in a high-stakes environment.",
+            "While serving, I trained over 1,000 future submarine operators and led teams in nuclear power plant operations.",
     },
     {
         id: 3,
@@ -57,7 +57,7 @@ const experience = [
         location: "Charleston, SC",
         date: "Feb 2024 - Present",
         description:
-            "I'm now diving into modern web development, learning to build responsive, user-focused applications with a comprehensive curriculum.",
+            "I'm now diving into modern web development, building software projects that interest me while growing my skills.",
     },
 ];
 

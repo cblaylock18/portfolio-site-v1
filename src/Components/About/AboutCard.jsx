@@ -19,23 +19,23 @@ function ImgContainer({ about }) {
     const totalImages = about.imgs ? about.imgs.length : 0;
 
     const handlePrev = () => {
-        currentIndex > 0
-            ? setCurrentIndex(currentIndex - 1)
-            : currentIndex === 0
-            ? setCurrentIndex(totalImages - 1)
-            : null;
+        setCurrentIndex(currentIndex > 0 ? currentIndex - 1 : totalImages - 1);
     };
 
     const handleNext = () => {
-        currentIndex === totalImages - 1
-            ? setCurrentIndex(0)
-            : setCurrentIndex(currentIndex + 1);
+        setCurrentIndex(
+            currentIndex === totalImages - 1 ? 0 : currentIndex + 1
+        );
     };
 
     return (
         <div className={styles.slider}>
             {totalImages > 1 && (
-                <button onClick={handlePrev} className={styles.prev}>
+                <button
+                    onClick={handlePrev}
+                    className={styles.prev}
+                    aria-label="Previous Image"
+                >
                     <Caret darkMode={darkMode} direction="left" />
                 </button>
             )}
@@ -53,7 +53,11 @@ function ImgContainer({ about }) {
                     })}
             </div>
             {totalImages > 1 && (
-                <button onClick={handleNext} className={styles.next}>
+                <button
+                    onClick={handleNext}
+                    className={styles.next}
+                    aria-label="Next Image"
+                >
                     <Caret darkMode={darkMode} direction="right" />
                 </button>
             )}
@@ -81,23 +85,23 @@ function AboutCard({
     return (
         <>
             {imgLeft ? (
-                <div
+                <article
                     className={`${styles.aboutCard} ${styles.left} ${
                         darkMode ? styles.dark : ""
                     }`}
                 >
                     <InfoContainer about={about} />
                     <ImgContainer about={about} />
-                </div>
+                </article>
             ) : (
-                <div
+                <article
                     className={`${styles.aboutCard} ${styles.right} ${
                         darkMode ? styles.dark : ""
                     }`}
                 >
                     <ImgContainer about={about} />
                     <InfoContainer about={about} />
-                </div>
+                </article>
             )}
         </>
     );

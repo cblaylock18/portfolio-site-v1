@@ -11,23 +11,26 @@ function PersonalInfo() {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div className={styles.personalInfo}>
+        <section
+            className={styles.personalInfo}
+            aria-label="Personal Information"
+        >
             <img src={headshot} alt="Christopher Blaylock" />
             <p>
-                <span>Hi! </span>I&apos;m a web developer building responsive,
-                user-focused apps, usually with React. Previously a Navy Nuclear
-                Engineer and Boeing Quality Engineer, I now enjoy learning all I
-                can about development!
+                <span>Hi! </span>I&apos;m a React developer that builds
+                responsive, user-focused apps. I enjoy learning all I can about
+                software development!
             </p>
             <a
                 href="https://www.linkedin.com/in/christopher-w-blaylock/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Christopher Blaylock LinkedIn Profile"
             >
                 Contact Me via LinkedIn{" "}
                 <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
             </a>
-        </div>
+        </section>
     );
 }
 
@@ -45,9 +48,7 @@ function ProjectCard({
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div
-            className={`${styles.projectCard} ${darkMode ? styles.dark : ""}`}
-        >
+        <div className={`${styles.projectCard} ${darkMode ? styles.dark : ""}`}>
             <Link to={`/projects#${project.id}`}>
                 <h2>{project.title}</h2>
             </Link>
@@ -79,14 +80,17 @@ function Bio() {
         <>
             <div className={`${styles.bio} ${darkMode ? styles.dark : ""}`}>
                 <PersonalInfo />
-                <div className={styles.personalProjects}>
+                <section
+                    className={styles.personalProjects}
+                    aria-label="Personal Projects"
+                >
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.id}
                             project={project}
                         ></ProjectCard>
                     ))}
-                </div>
+                </section>
             </div>
         </>
     );

@@ -46,6 +46,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 0.2rem;
+    font-weight: bold;
 }
 
 .projectPage a:hover {
@@ -71,4 +72,8 @@
     flex-direction: column;
     gap: 4rem;
     padding-bottom: 4rem;
+}
+
+.callToAction {
+    text-align: center;
 }

@@ -18,7 +18,7 @@ function ProjectCard({
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div
+        <article
             className={`${styles.projectCard} ${darkMode ? styles.dark : ""}`}
             id={`${project.id}`}
         >
@@ -51,7 +51,7 @@ function ProjectCard({
                     </a>
                 </span>
             </div>
-        </div>
+        </article>
     );
 }
 

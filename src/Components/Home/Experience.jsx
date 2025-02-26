@@ -30,19 +30,25 @@ function ExperienceBlock({
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div
+        <section
             className={`${styles.experienceBlock} ${
                 darkMode ? styles.dark : ""
             }`}
+            aria-labelledby={`${experience.title.replace(" ", "")}-job-block`}
         >
-            <h3 className={styles.title}>{experience.title}</h3>
+            <h3
+                id={`${experience.title.replace(" ", "")}-job-block`}
+                className={styles.title}
+            >
+                {experience.title}
+            </h3>
             <p className={styles.organization}>{experience.organization}</p>
             <p
                 className={styles.data}
             >{`${experience.date} in ${experience.location}`}</p>
             <p className={styles.description}>{experience.description}</p>
             <RightArrow darkMode={darkMode} />
-        </div>
+        </section>
     );
 }
 
@@ -50,7 +56,8 @@ function Experience() {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div
+        <section
+            aria-label="Experience and Education"
             className={`${styles.experience} ${darkMode ? styles.dark : ""}`}
         >
             <h2>Experience</h2>
@@ -69,7 +76,7 @@ function Experience() {
                     ) : null;
                 })}
             </div>
-        </div>
+        </section>
     );
 }
 
