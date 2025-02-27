@@ -28,6 +28,8 @@ A personal portfolio website built with React and React Router, designed to show
     Scoped, maintainable styles for a clean codebase.
 -   **Standard Portfolio Sections:**  
     Includes a home page (bio, projects, tech toolbox, education, experience), a projects page (6 main projects), and an about page (personal hobbies and travels).
+-   **Responsive Design:**  
+    Prioritize making the site fully responsive across all devices.
 
 ## Live Demo
 
@@ -56,8 +58,6 @@ The site is organized into several key sections:
 
 ## Future Improvements
 
--   **Responsive Design:**  
-    Prioritize making the site fully responsive across all devices.
 -   **CSS Animations:**  
     Add subtle animations for transitions and interactive elements.
 -   **Dynamic Photo Loading:**  
