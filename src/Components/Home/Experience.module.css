@@ -96,24 +96,25 @@
     }
 
     .experienceBlock {
-        margin-bottom: 4rem;
+        margin-bottom: 2.5rem;
+        height: auto;
+    }
+
+    .organization {
+        padding-bottom: 2rem;
     }
 
     .experienceBlock > svg {
-        top: 13rem;
+        top: auto;
+        bottom: -1rem;
         right: 50%;
-        transform: translateY(0%) translateX(50%) rotate(90deg);
+        transform: translateY(100%) translateX(50%) rotate(90deg);
     }
 }
 
 @media screen and (max-width: 400px) {
     .experienceBlock {
-        height: 200px;
         width: 90%;
-    }
-
-    .experienceBlock > svg {
-        top: 16rem;
     }
 
     .title {

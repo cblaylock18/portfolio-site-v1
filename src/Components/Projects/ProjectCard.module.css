@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 1100px) {
     .projectCard {
-        height: 800px;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -103,21 +103,33 @@
     .imageContainer {
         height: 50%;
     }
+
+    .projectCard p {
+        padding-bottom: 1rem;
+    }
 }
 
 @media screen and (max-width: 950px) {
     .imageContainer {
         height: 40%;
     }
+
+    .infoContainer {
+        padding: 0 1rem;
+    }
 }
 
-@media screen and (max-width: 700px) {  
+@media screen and (max-width: 700px) {
     .imageContainer {
         height: 30%;
     }
 
     .links {
         font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 1rem;
     }
 
     .shortDesc {
