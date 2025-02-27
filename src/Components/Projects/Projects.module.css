@@ -77,3 +77,10 @@
 .callToAction {
     text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+    .projectPage > p,
+    .callToAction {
+        font-size: 1.3rem;
+    }
+}

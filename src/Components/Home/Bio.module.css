@@ -92,7 +92,7 @@
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
 }
@@ -129,8 +129,7 @@
 }
 
 .projectCard > a:nth-child(1) {
-    align-self: flex-end;
-    padding-bottom: 0.25rem;
+    align-self: center;
 }
 
 .projectCard > a:nth-child(3),
@@ -162,4 +161,58 @@
 .projectCard h2 {
     margin: 0;
     font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1475px) {
+    .projectCard {
+        height: 175px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .bio {
+        flex-direction: column;
+    }
+
+    .personalInfo > a {
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .projectCard {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .projectCard {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .projectCard > a:nth-child(n) {
+        align-self: flex-start;
+    }
+
+    .projectCard > a:nth-child(3) {
+        margin-top: auto;
+    }
+
+    .personalInfo > img {
+        height: 175px;
+        width: 175px;
+    }
+
+    .personalInfo > p > span {
+        font-size: 2rem;
+        line-height: 1.9rem;
+    }
+
+    .personalInfo > a {
+        flex-wrap: wrap;
+        text-align: center;
+        height: 5rem;
+    }
 }

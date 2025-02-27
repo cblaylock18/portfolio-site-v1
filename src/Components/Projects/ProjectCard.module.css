@@ -1,7 +1,7 @@
 .projectCard {
     width: 100%;
     min-width: 325px;
-    height: 400px;
+    height: 450px;
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: repeat(2, 1fr);
@@ -19,7 +19,7 @@
 
 .imageContainer {
     border-radius: 16px;
-    height: 400px;
+    height: 450px;
     width: 100%;
     align-self: flex-start;
     display: flex;
@@ -90,4 +90,66 @@
 .projectCard > a > svg {
     height: 25px;
     width: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+    .projectCard {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imageContainer {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .imageContainer {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {  
+    .imageContainer {
+        height: 30%;
+    }
+
+    .links {
+        font-size: 1.5rem;
+    }
+
+    .shortDesc {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .projectCard h3 {
+        font-size: 1.8rem;
+    }
+
+    .longDesc {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .projectCard {
+        min-width: 0;
+    }
+
+    .projectCard h3 {
+        font-size: 1.4rem;
+    }
+
+    .shortDesc {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .links {
+        font-size: 1rem;
+    }
 }

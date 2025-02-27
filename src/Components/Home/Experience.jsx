@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { ThemeContext } from "../../Context/ThemeProvider";
 import { experience } from "./experience";
 import styles from "./Experience.module.css";
-import { RightArrow } from "../../assets/SVGs/RightArrow";
+import { Arrow } from "../../assets/SVGs/Arrow";
 
 function ExperienceBlock({
     experience = [
@@ -47,7 +47,7 @@ function ExperienceBlock({
                 className={styles.data}
             >{`${experience.date} in ${experience.location}`}</p>
             <p className={styles.description}>{experience.description}</p>
-            <RightArrow darkMode={darkMode} />
+            <Arrow darkMode={darkMode} />
         </section>
     );
 }

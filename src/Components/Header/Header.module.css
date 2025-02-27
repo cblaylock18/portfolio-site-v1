@@ -27,17 +27,48 @@
     background-color: white;
 }
 
-.header > img {
+.header > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header > div > img {
     height: 40px;
     border: 1px solid white;
 }
 
-.header > h1 {
+.header > div > h1 {
     font-size: 2.5rem;
     margin: 0;
+    text-align: center;
 }
 
 .dark {
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width: 1250px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header > div > img {
+        height: 25px;
+    }
+
+    .header > div > h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        position: relative;
+    }
 }

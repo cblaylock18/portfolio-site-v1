@@ -112,3 +112,22 @@
     background-color: black;
     color: white;
 }
+
+@media screen and (max-width: 1250px) {
+    .nav {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .nav > ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        position: sticky;
+    }
+}

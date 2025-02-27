@@ -24,10 +24,6 @@
     margin-bottom: 4rem;
 }
 
-.education {
-    margin-bottom: 0.5rem;
-}
-
 .experienceBlock {
     position: relative;
     display: flex;
@@ -89,4 +85,38 @@
 
 .experienceBlock:last-child > svg {
     display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .work,
+    .education {
+        flex-direction: column;
+        padding: 0rem;
+        margin-bottom: 0;
+    }
+
+    .experienceBlock {
+        margin-bottom: 4rem;
+    }
+
+    .experienceBlock > svg {
+        top: 13rem;
+        right: 50%;
+        transform: translateY(0%) translateX(50%) rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .experienceBlock {
+        height: 200px;
+        width: 90%;
+    }
+
+    .experienceBlock > svg {
+        top: 16rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
 }

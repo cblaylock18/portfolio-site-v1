@@ -8,8 +8,10 @@ function Header() {
 
     return (
         <header className={`${styles.header} ${darkMode ? styles.dark : ""}`}>
-            <img src="favicon.png" alt="Christopher Blaylock logo" />
-            <h1>Christopher Blaylock</h1>
+            <div>
+                <img src="favicon.png" alt="Christopher Blaylock logo" />
+                <h1>Christopher Blaylock</h1>
+            </div>
             <Nav></Nav>
         </header>
     );

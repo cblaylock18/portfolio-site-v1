@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function RightArrow({ darkMode = false }) {
+function Arrow({ darkMode = false }) {
     const stroke = darkMode ? "white" : "black";
 
     return (
@@ -25,8 +25,8 @@ function RightArrow({ darkMode = false }) {
     );
 }
 
-RightArrow.propTypes = {
+Arrow.propTypes = {
     darkMode: PropTypes.bool,
 };
 
-export { RightArrow };
+export { Arrow };
