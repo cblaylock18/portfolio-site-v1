@@ -6,6 +6,7 @@ import headshot from "../../assets/PersonalImages/headshot.jpg";
 import styles from "./Bio.module.css";
 import { projects } from "../Projects/projects.js";
 import { ExternalLinkSVG } from "../../assets/SVGs/ExternalLinkSVG.jsx";
+import { Caret } from "../../assets/SVGs/Caret.jsx";
 
 function PersonalInfo() {
     const { darkMode } = useContext(ThemeContext);
@@ -17,9 +18,10 @@ function PersonalInfo() {
         >
             <img src={headshot} alt="Christopher Blaylock" />
             <p>
-                <span>Hi! </span>I&apos;m a React developer that builds
-                responsive, user-focused apps. I always enjoy learning and am
-                currently focused on Node/Express.
+                <span>Hi! </span>I&apos;m a full-stack developer that builds
+                responsive, user-focused apps. My frontend expertise is in
+                React, and I&apos;ve recently expanded my skills in back-end
+                with Node.js, Express, and PostgreSQL.
             </p>
             <a
                 href="https://www.linkedin.com/in/christopher-w-blaylock/"
@@ -29,6 +31,14 @@ function PersonalInfo() {
             >
                 Contact Me via LinkedIn{" "}
                 <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
+            </a>
+            <a
+                href="https://github.com/cblaylock18"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Christopher Blaylock Github Profile"
+            >
+                Github <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
             </a>
         </section>
     );
@@ -50,25 +60,30 @@ function ProjectCard({
     return (
         <div className={`${styles.projectCard} ${darkMode ? styles.dark : ""}`}>
             <Link to={`/projects#${project.id}`}>
-                <h2>{project.title}</h2>
+                <h2>
+                    {project.title}
+                    <Caret darkMode={darkMode} direction="right" />
+                </h2>
             </Link>
             <p>{project.shortDesc}</p>
-            <a
-                href={project.liveDemo}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Live Demo{" "}
-                <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
-            </a>
-            <a
-                href={project.githubRepo}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Github Repo{" "}
-                <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
-            </a>
+            <div>
+                <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Live Demo{" "}
+                    <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
+                </a>
+                <a
+                    href={project.githubRepo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Github Repo{" "}
+                    <ExternalLinkSVG darkMode={darkMode}></ExternalLinkSVG>
+                </a>
+            </div>
         </div>
     );
 }

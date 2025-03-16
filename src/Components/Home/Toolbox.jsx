@@ -12,15 +12,20 @@ function Toolbox() {
             className={`${styles.toolbox} ${darkMode ? styles.dark : ""}`}
         >
             <h2 id="tech-toolbox-section-header">Tech Toolbox</h2>
-            <div className={styles.tech}>
-                {toolbox.map((tool) => {
-                    return (
-                        <p key={tool.id} className={styles.tool}>
-                            {tool.tool}
-                        </p>
-                    );
-                })}
-            </div>
+            {toolbox.map((sectionObj) => (
+                <div key={sectionObj.section} className={styles.section}>
+                    <h3 className={styles.sectionHeader}>
+                        {sectionObj.section}
+                    </h3>
+                    <div className={styles.tech}>
+                        {sectionObj.tools.map((tool) => (
+                            <p key={tool.id} className={styles.tool}>
+                                {tool.tool}
+                            </p>
+                        ))}
+                    </div>
+                </div>
+            ))}
         </section>
     );
 }

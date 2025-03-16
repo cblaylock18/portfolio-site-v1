@@ -20,9 +20,16 @@
 }
 
 .toolbox > h2 {
-    padding: 0 0 4rem 0;
+    padding: 0 0 2rem 0;
     margin: 0;
     font-size: 3rem;
+}
+
+.toolbox h3 {
+    padding: 0 0 2rem 0;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: start;
 }
 
 .tech {
@@ -32,6 +39,7 @@
     align-items: center;
     column-gap: 2rem;
     row-gap: 1rem;
+    padding-bottom: 2rem;
 }
 
 .tool {
@@ -40,7 +48,7 @@
     border-radius: 16px;
     padding: 0.5rem;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

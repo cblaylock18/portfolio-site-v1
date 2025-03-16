@@ -4,6 +4,7 @@ import battleship from "../../assets/ProjectImages/battleship.png";
 import landingPage from "../../assets/ProjectImages/homepage.png";
 import toDoTracker from "../../assets/ProjectImages/to-do-tracker.png";
 import ticTacToe from "../../assets/ProjectImages/tic-tac-toe.png";
+import inventory from "../../assets/ProjectImages/inventory.png";
 
 const projects = [
     {
@@ -19,6 +20,17 @@ const projects = [
     },
     {
         id: 2,
+        title: "Inventory App",
+        liveDemo:
+            "https://inventory-application-production-8a5f.up.railway.app/",
+        githubRepo: "https://github.com/cblaylock18/inventory-application",
+        imageSrc: inventory,
+        shortDesc: "Node, Express, PostgreSQL, EJS, express-validator, CRUD",
+        description:
+            "A robust inventory management app for foster animals built with Node.js, Express, and PostgreSQL. It features comprehensive CRUD functionality, dynamic filtering, and admin password protection, all deployed on Railway with private networking.",
+    },
+    {
+        id: 3,
         title: "Pokémon Memory Card",
         liveDemo:
             "https://memory-card-6ppp23py9-cblaylock18s-projects.vercel.app/",
@@ -29,7 +41,7 @@ const projects = [
             "A memory game built with React. Players click through Pokémon cards and score points by selecting different Pokémon without repeating any previously chosen card. This project was built to practice React fundamentals, state management, and dynamic data fetching (PokéAPI).",
     },
     {
-        id: 3,
+        id: 4,
         title: "Battleship",
         liveDemo: "https://cblaylock18.github.io/battleship/",
         githubRepo: "https://github.com/cblaylock18/battleship",
@@ -39,7 +51,7 @@ const projects = [
             "A classic Battleship game built with vanilla JavaScript. This project was developed to practice core JavaScript fundamentals, DOM manipulation, and test-driven development (TDD) with Jest.",
     },
     {
-        id: 4,
+        id: 5,
         title: "Landing Page",
         liveDemo: "https://cblaylock18.github.io/homepage-practice/",
         githubRepo: "https://github.com/cblaylock18/homepage-practice",
@@ -49,7 +61,7 @@ const projects = [
             "A responsive homepage built using Advanced HTML/CSS techniques. This project showcases modern HTML5 and CSS3 techniques—including custom fonts with @font-face, diagonal backgrounds via clip-path, CSS Grid, Flexbox, and media queries—to create an engaging, adaptive layout for mobile, tablet, and desktop screens.",
     },
     {
-        id: 5,
+        id: 6,
         title: "To-Do Tracker",
         liveDemo: "https://cblaylock18.github.io/to-do-list/",
         githubRepo: "https://github.com/cblaylock18/to-do-list",
@@ -59,7 +71,7 @@ const projects = [
             "A responsive To-Do List App built with HTML, CSS, and JavaScript. It leverages DOM manipulation and localStorage to manage projects and tasks with live updates and priority sorting.",
     },
     {
-        id: 6,
+        id: 7,
         title: "Tic-Tac-Toe",
         liveDemo: "https://cblaylock18.github.io/tic-tac-toe/",
         githubRepo: "https://github.com/cblaylock18/tic-tac-toe",

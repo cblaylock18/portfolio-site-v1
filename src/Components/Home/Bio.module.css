@@ -66,7 +66,6 @@
     height: 30px;
     max-width: 400px;
     font-weight: bold;
-    border-bottom: 1px solid transparent;
 }
 
 .personalInfo > a > svg {
@@ -74,13 +73,15 @@
     width: 30px;
 }
 
-.personalInfo a:hover,
-.personalProjects a:hover {
-    border-bottom: 1px solid black;
+.personalInfo a,
+.personalProjects a {
+    text-decoration: none;
 }
 
-.dark a:hover {
-    border-bottom: 1px solid white;
+.personalInfo a:hover,
+.personalProjects a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .personalInfo > a:active {
@@ -115,37 +116,36 @@
     border: 1px solid white;
 }
 
+.projectCard > a,
+.projectCard > p {
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
 .projectCard > a {
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.projectCard > a:hover svg {
+    transform: translate(6px);
+}
+
+.projectCard > div {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.projectCard > div > a {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.projectCard > a:nth-child(1),
-.projectCard > p {
-    justify-self: start;
-}
-
-.projectCard > a:nth-child(1) {
-    align-self: center;
-}
-
-.projectCard > a:nth-child(3),
-.projectCard > a:nth-child(4) {
-    justify-self: end;
-}
-
-.projectCard > a:nth-child(3) {
-    align-self: end;
-}
-
-.projectCard > a:nth-child(4) {
-    align-self: start;
-}
-
-.projectCard > a > svg {
+.projectCard > div > a > svg {
     height: 25px;
     width: 25px;
 }
@@ -161,6 +161,15 @@
 .projectCard h2 {
     margin: 0;
     font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.projectCard h2 svg {
+    max-width: 30px;
+    max-height: 30px;
+    display: inline;
+    transition: all 0.2s;
 }
 
 @media screen and (max-width: 1475px) {
@@ -192,12 +201,9 @@
         min-width: 0;
     }
 
-    .projectCard > a:nth-child(n) {
-        align-self: flex-start;
-    }
-
-    .projectCard > a:nth-child(3) {
-        margin-top: auto;
+    .projectCard > div {
+        align-items: flex-start;
+        justify-content: flex-end;
     }
 
     .personalInfo > img {
