@@ -10,8 +10,7 @@ const projects = [
     {
         id: 1,
         title: "Shopping Cart",
-        liveDemo:
-            "https://mock-shopping-cart-i8aglckgf-cblaylock18s-projects.vercel.app/",
+        liveDemo: "https://mock-shopping-cart-eta.vercel.app/",
         githubRepo: "https://github.com/cblaylock18/mock-shopping-cart",
         imageSrc: shoppingCart,
         shortDesc: "React, React Router, CSS Modules, Vitest, CRUD",
@@ -32,8 +31,7 @@ const projects = [
     {
         id: 3,
         title: "Pokémon Memory Card",
-        liveDemo:
-            "https://memory-card-6ppp23py9-cblaylock18s-projects.vercel.app/",
+        liveDemo: "https://memory-card-taupe-three.vercel.app/",
         githubRepo: "https://github.com/cblaylock18/memory-card",
         imageSrc: memoryCard,
         shortDesc: "React, RESTful API",
