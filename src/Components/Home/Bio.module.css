@@ -184,7 +184,11 @@
     }
 
     .personalInfo > a {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .personalInfo > p {
+        padding-bottom: 1rem;
     }
 }
 
