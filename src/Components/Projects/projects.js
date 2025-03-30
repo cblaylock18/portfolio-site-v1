@@ -6,10 +6,22 @@ import toDoTracker from "../../assets/ProjectImages/to-do-tracker.png";
 import ticTacToe from "../../assets/ProjectImages/tic-tac-toe.png";
 import inventory from "../../assets/ProjectImages/inventory.png";
 import membersOnly from "../../assets/ProjectImages/members-only.png";
+import fileUploader from "../../assets/ProjectImages/fileuploader.png";
 
 const projects = [
     {
         id: 1,
+        title: "File Uploader & Cloud Storage",
+        liveDemo: "https://your-live-demo-link",
+        githubRepo: "https://github.com/cblaylock18/file-uploader",
+        imageSrc: fileUploader,
+        shortDesc:
+            "Node, Express, PostgreSQL, Cloudinary, Multer, Prisma, Sessions, Auth",
+        description:
+            "A full-stack file uploader and cloud storage app with authentication. Users can create folders, upload files to Cloudinary, organize them, and share folder links with others. It features user authentication with Passport.js, session-based security, and Prisma ORM for database management.",
+    },
+    {
+        id: 2,
         title: "Members Only Clubhouse",
         liveDemo: "https://members-only-production-c442.up.railway.app/",
         githubRepo: "https://github.com/cblaylock18/members-only",
@@ -20,7 +32,7 @@ const projects = [
             "A secure members-only clubhouse built with Node.js, Express, and PostgreSQL. Users can sign up, log in, and post anonymous messages — while non-members see only the message content. Members and admin users gain access to the author and timestamp. Authentication is managed with Passport.js and passwords are secured using bcrypt.",
     },
     {
-        id: 2,
+        id: 3,
         title: "Shopping Cart",
         liveDemo: "https://mock-shopping-cart-eta.vercel.app/",
         githubRepo: "https://github.com/cblaylock18/mock-shopping-cart",
@@ -30,7 +42,7 @@ const projects = [
             "A React-based shopping cart application that allows users to browse items, add them to their cart, adjust quantities, and view their total. This project was built to practice React fundamentals, state management, and routing.",
     },
     {
-        id: 3,
+        id: 4,
         title: "Inventory App",
         liveDemo:
             "https://inventory-application-production-8a5f.up.railway.app/",
@@ -41,7 +53,7 @@ const projects = [
             "A robust inventory management app for foster animals built with Node.js, Express, and PostgreSQL. It features comprehensive CRUD functionality, dynamic filtering, and admin password protection, all deployed on Railway with private networking.",
     },
     {
-        id: 4,
+        id: 5,
         title: "Pokémon Memory Card",
         liveDemo: "https://memory-card-taupe-three.vercel.app/",
         githubRepo: "https://github.com/cblaylock18/memory-card",
@@ -51,7 +63,7 @@ const projects = [
             "A memory game built with React. Players click through Pokémon cards and score points by selecting different Pokémon without repeating any previously chosen card. This project was built to practice React fundamentals, state management, and dynamic data fetching (PokéAPI).",
     },
     {
-        id: 5,
+        id: 6,
         title: "Battleship",
         liveDemo: "https://cblaylock18.github.io/battleship/",
         githubRepo: "https://github.com/cblaylock18/battleship",
@@ -61,7 +73,7 @@ const projects = [
             "A classic Battleship game built with vanilla JavaScript. This project was developed to practice core JavaScript fundamentals, DOM manipulation, and test-driven development (TDD) with Jest.",
     },
     {
-        id: 6,
+        id: 7,
         title: "Landing Page",
         liveDemo: "https://cblaylock18.github.io/homepage-practice/",
         githubRepo: "https://github.com/cblaylock18/homepage-practice",
@@ -71,7 +83,7 @@ const projects = [
             "A responsive homepage built using Advanced HTML/CSS techniques. This project showcases modern HTML5 and CSS3 techniques—including custom fonts with @font-face, diagonal backgrounds via clip-path, CSS Grid, Flexbox, and media queries—to create an engaging, adaptive layout for mobile, tablet, and desktop screens.",
     },
     {
-        id: 7,
+        id: 8,
         title: "To-Do Tracker",
         liveDemo: "https://cblaylock18.github.io/to-do-list/",
         githubRepo: "https://github.com/cblaylock18/to-do-list",
@@ -80,8 +92,11 @@ const projects = [
         description:
             "A responsive To-Do List App built with HTML, CSS, and JavaScript. It leverages DOM manipulation and localStorage to manage projects and tasks with live updates and priority sorting.",
     },
+];
+
+const otherProjects = [
     {
-        id: 8,
+        id: 9,
         title: "Tic-Tac-Toe",
         liveDemo: "https://cblaylock18.github.io/tic-tac-toe/",
         githubRepo: "https://github.com/cblaylock18/tic-tac-toe",
