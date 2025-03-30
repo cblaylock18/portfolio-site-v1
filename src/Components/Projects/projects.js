@@ -11,8 +11,8 @@ import fileUploader from "../../assets/ProjectImages/fileuploader.png";
 const projects = [
     {
         id: 1,
-        title: "File Uploader & Cloud Storage",
-        liveDemo: "https://your-live-demo-link",
+        title: "File Uploader",
+        liveDemo: "file-uploader-production-4da9.up.railway.app",
         githubRepo: "https://github.com/cblaylock18/file-uploader",
         imageSrc: fileUploader,
         shortDesc:
