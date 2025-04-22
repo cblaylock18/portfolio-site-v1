@@ -94,6 +94,9 @@ const projects = [
         description:
             "A responsive homepage built using Advanced HTML/CSS techniques. This project showcases modern HTML5 and CSS3 techniques—including custom fonts with @font-face, diagonal backgrounds via clip-path, CSS Grid, Flexbox, and media queries—to create an engaging, adaptive layout for mobile, tablet, and desktop screens.",
     },
+];
+
+const otherProjects = [
     {
         id: 9,
         title: "To-Do Tracker",
@@ -104,9 +107,6 @@ const projects = [
         description:
             "A responsive To-Do List App built with HTML, CSS, and JavaScript. It leverages DOM manipulation and localStorage to manage projects and tasks with live updates and priority sorting.",
     },
-];
-
-const otherProjects = [
     {
         id: 10,
         title: "Tic-Tac-Toe",
