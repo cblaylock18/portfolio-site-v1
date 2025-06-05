@@ -55,7 +55,7 @@ const experience = [
         title: "Software Development",
         organization: "The Odin Project",
         location: "Charleston, SC",
-        date: "Feb 2024 - Present",
+        date: "Apr 2023 - Present",
         description:
             "I'm now diving into modern web development, building software projects that interest me while growing my skills.",
     },

@@ -20,8 +20,8 @@ function PersonalInfo() {
             <p>
                 <span>Hi! </span>I&apos;m a full-stack developer that builds
                 responsive, user-focused apps. My frontend expertise is in
-                React, and I&apos;ve recently expanded my skills in back-end
-                with Node.js, Express, and PostgreSQL.
+                React, and my favorite backend tech is Node.js/Express and
+                Postgres.
             </p>
             <a
                 href="https://www.linkedin.com/in/christopher-w-blaylock/"
