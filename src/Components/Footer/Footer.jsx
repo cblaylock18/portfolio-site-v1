@@ -33,7 +33,7 @@ function Footer() {
                     download
                     aria-label="Download Christopher Blaylock's Resume (PDF, 200kb)"
                 >
-                    Download Resume (PDF <200kb)
+                    Download Resume (PDF {`<`}200kb)
                 </a>
             </div>
             <p className={styles.copyright}>
