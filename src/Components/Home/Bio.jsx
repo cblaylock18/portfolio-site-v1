@@ -23,6 +23,10 @@ function PersonalInfo() {
                 React, and my favorite backend tech is Node.js/Express and
                 Postgres.
             </p>
+            <p>
+                I&apos;m currently learning all I can about TypeScript, Docker,
+                and CI/CD.
+            </p>
             <a
                 href="https://www.linkedin.com/in/christopher-w-blaylock/"
                 target="_blank"
